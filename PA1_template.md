@@ -274,7 +274,7 @@ require(ggplot2)
 ggplot(stepsByInterval2 , aes(interval , steps, color = activityDay, group = 1)) +
         geom_line() + facet_wrap(~activityDay , ncol = 1, nrow = 2) +
         labs(title = "Average Daily Steps", x = "Interval", y = "Total Steps/Day") +
-        scale_x_discrete(breaks = seq(0,2355,500))
+        scale_x_discrete(breaks = seq(0,2355,500)) 
 ```
 
 ![](PA1_template_files/figure-html/weekday vs weekend time series-1.png)<!-- -->
